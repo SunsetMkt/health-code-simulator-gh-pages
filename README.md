@@ -2,3 +2,5 @@
 Deploy ilovexjp/health-code-simulator to GitHub Pages with Actions workflow
 
 There may be network error because of the ServiceWorker (used to support offline access) if you deploy this on default GitHub Pages doamin, please configure your own domain.
+
+Source: https://codeberg.org/ilovexjp/health-code-simulator
