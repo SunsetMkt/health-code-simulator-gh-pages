@@ -36,12 +36,13 @@ jobs:
         run: |
           git clone https://codeberg.org/ilovexjp/health-code-simulator.git
       - name: Install Deps
+        working-directory: ./health-code-simulator
         run: |
-          npm i -g uglify-js clean-css-cli html-minifier sass
+          npm install
       - name: Build
         working-directory: ./health-code-simulator
         run: |
-          make build
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
